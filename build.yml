@@ -45,3 +45,4 @@ jobs:
           ${{ runner.temp }}\scanner\dotnet-sonarscanner begin /k:"wvasquezn-maker_CleanArchitecture" /o:"wvasquezn-maker" /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
           dotnet build
           ${{ runner.temp }}\scanner\dotnet-sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
+          # SonarQube analysis
